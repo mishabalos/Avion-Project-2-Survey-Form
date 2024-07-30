@@ -1,0 +1,325 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.m-plus-rounded-1c-regular {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.m-plus-rounded-1c-bold {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.m-plus-rounded-1c-extrabold {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.m-plus-rounded-1c-black {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+body {
+  background-image: url(https://cdn.shopify.com/s/files/1/0580/3245/5858/files/Wallpapers_modern-hor.png?v=1701916828);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-bottom: 20px;
+}
+
+h1, p {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  color: white;
+  text-align: center;
+  width: 800px;
+  margin: 50px auto 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7), 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 15px;
+  font-style: italic;
+  margin-top: 0;
+}
+
+#survey-form {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  color: white;
+  display: flex;
+  flex-direction: column; 
+  width: 800px;
+  margin: auto;
+  border-style: none;
+  padding-bottom: 50px;
+}
+
+#personal-details, #food-preferences, #taste-preference, textarea {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 30px 30px 30px; 
+}
+
+fieldset {
+  border-color: yellow;
+  border-style: dashed ;
+  border-radius: 9px;
+}
+
+legend {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+label {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.label-2 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.caption {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+.input-bar {
+  width: 100%;
+  height: 30px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  padding: 5px 0 5px 5px;
+  border-radius: 5px;
+}
+
+.selector-bar {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  width: 100%;
+  height: 30px;
+  font-size: 18px;
+  padding: 5px 2px 0px 5px;
+  color: black;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.other-text {
+  outline: 0px;
+  border: 0px;
+  background: transparent;
+  margin-top: 10px;
+  border-bottom: 3px solid white;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+.other-text::placeholder {
+  color: white;
+}
+
+#area {
+  margin-bottom: 10px;
+}
+
+#often, #what-cuisine {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+#container {
+  width: auto;
+  margin: 0 auto;
+}
+
+.grid {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.grid-item {
+  width: 33%;
+  padding-top: 33%;
+  border: 1px solid transparent;
+  overflow: hidden; 
+  position: relative;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 3px;
+}
+
+.grid-checkbox {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  z-index: 2;
+}
+
+.grid-checkbox:checked ~ img {
+  border: 10px solid yellow;
+}
+
+.grid-item label {
+  display: block;
+  position: absolute;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 15px;
+  color: red;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 2px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#caption-slider {
+  font-size: 15px;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 700px;
+}
+
+.spicy-slider {
+  -webkit-appearance: none;
+ width: 700px;
+  height: 20px;
+  outline: none;
+  opacity: 1;
+  border-radius: 10px;
+  background-color: orange;
+}
+
+.spicy-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/2/2b/Hot_chili_red_pepper_icon_emote.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 2;
+  margin-top: 0px;
+  cursor: pointer;
+}
+
+textarea {
+  min-width: 700px;
+  max-width: 700px;
+  font-size: 15px;
+  margin-bottom: 20px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  padding: 5px 0 5px 5px;
+  background-color: white;
+  color: red;
+  border-color: yellow;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 5px;
+  padding-left: 5px;
+}
+
+textarea::placeholder {
+  color: gray;
+  padding-left: 5px;
+  font-size: 15px;
+}
+
+.reset-submit {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#reset, #submit {
+  -webkit-appearance: none;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 15px;
+  color: white;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  background-color: transparent;
+  border-radius: 5px;
+  border-color:yellow;
+  border-width: 2px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#submit-html {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+   color: white;
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+#jollibee-logo {
+background-image: url(Photos/Jollibee-Logo.wine.png);
+  background-size: 100%;
+}

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <h1 id="title">Jollibee Singapore Survey</h1>
+  <p id="description">This survey is designed to gather insights from our local Singaporean customers <br>to help us understand your needs and preferences better.</p>
+
+  <form action="submit.html" method="get" id="survey-form">
+    <div id="content">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <div id="personal-details">
+          <label for="name" id="name-label">Name</label>
+          <input id="name" class="input-bar" type="text" placeholder="Enter your name" name="name" required>
+
+          <label for="email" id="email-label">Email</label>
+          <input id="email" class="input-bar" type="email" placeholder="Enter your email" name="email" required>
+
+          <label for="dropdown">Gender</label>
+          <select name="gender" id="dropdown" class="selector-bar">
+            <option value="select" selected disabled>Select an option</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+
+          <label for="number" id="number-label">Age</label>
+          <input id="number" class="input-bar" type="number" min="3" max="100" placeholder="Age" name="number" required>
+
+          <label for="birthday" id="birthday-label">Birthday</label>
+          <input id="birthday" type="date" class="selector-bar" name="birthday">
+
+
+          <label for="area">Residential Area</label>
+          <select name="area" id="area" class="selector-bar">
+            <option value="select" selected disabled>Select an option</option>
+            <option value="Central">Central</option>
+            <option value="East">East</option>
+            <option value="West">West</option>
+            <option value="North">North</option>
+            <option value="North-east">North East</option>
+            <option value="Other">Other (Please specify)</option>
+          </select>
+          <input type="text" id="area" class="other-text" name="other-area"
+            placeholder="If Other, please specify here." />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend for="food-preferences">Food Preferences</legend>
+
+        <div id="food-preferences">
+
+          <div id="often">
+            <label for="often-eat">How often do you eat fast food?</label>
+            <select id="often-eat" name="often-eat" class="selector-bar">
+              <option value="select" selected disabled>Select an option</option>
+              <option value="Daily">Daily</option>
+              <option value="Weekly">Weekly</option>
+              <option value="Monthly">Monthly</option>
+              <option value="Rarely">Rarely</option>
+              <option value="Never">Never</option>
+            </select>
+
+          </div>
+
+          <div id="what-cuisine">
+            <label id="cuisine" class="label-2" name="cuisine">What type of cuisine do you prefer?</label>
+
+            <label for="Asian">
+              <input id="Asian" type="radio" name="cuisine" value="Asian" /> Asian</label>
+
+            <label for="Western">
+              <input id="Western" type="radio" name="cuisine" value="Western" /> Western
+            </label>
+            <label for="Middle-eastern">
+              <input id="Middle-eastern" type="radio" name="cuisine" value="Middle Eastern" /> Middle Eastern
+            </label>
+            <label for="Mediterranean">
+              <input id="Mediterranean" type="radio" name="cuisine" value="Mediterranean" /> Mediterranean
+            </label>
+            <label for="Other">
+              <input id="Other" type="radio" name="cuisine" value="Other" /> Other
+            </label>
+
+            <input type="text" id="cuisine" class="other-text" name="other-cuisine"
+              placeholder="If Other, please specify here." />
+
+            </label>
+          </div>
+
+
+
+          <div id="container">
+            <label id="menu-items " class="label-2" name="menu-items">Which of the following Jollibee menu items are you
+              most excited
+              about? <div class="caption">(Select all that apply by clicking the picture):</div>
+            </label>
+
+            <div class="grid">
+
+              <div class="grid-item">
+                <input type="checkbox" class="grid-checkbox" id="Chickenjoy" value="Chickenjoy" name="Chickenjoy" />
+                <label for="Chickenjoy">Chickenjoy</label>
+                <img
+                  src="https://www.jollibeefoods.com/cdn/shop/products/2-pc-one-side-chickenjoy.jpg?v=1635459012&width=600"
+                  alt="Chickenjoy">
+              </div>
+
+
+              <div class="grid-item">
+                <input type="checkbox" class="grid-checkbox" id="Crispy-chicken-sandwich"
+                  value="Crispy-chicken-sandwich" name="Crispy-chicken-sandwich" />
+                <label for="Crispy-chicken-sandwich">Crispy Chicken Sandwich</label>
+                <img
+                  src="https://www.jollibeefoods.com/cdn/shop/products/Original-Chicken-Sandwich_600x480px.jpg?v=1635460755&width=600"
+                  alt="Crispy-chicken-sandwich">
+              </div>
+
+
+              <div class="grid-item">
+                <input type="checkbox" class="grid-checkbox" id="Aloha-burger" value="Aloha-burger"
+                  name="Aloha-burger" />
+                <label for="Aloha-burger">Aloha Chicken Sandwich</label>
+                <img
+                  src="https://www.jollibeefoods.com/cdn/shop/files/JBAlohaChickenSandwich.png?v=1709337220&width=600"
+                  alt="Aloha-burger">
+              </div>
+
+              <div class="grid-item">
+                <input type="checkbox" class="grid-checkbox" id="Burger-steak" value="Burger-steak"
+                  name="Burger-steak" />
+                <label for="Burger-steak">Burger Steak</label>
+                <img
+                  src="https://www.jollibeefoods.com/cdn/shop/products/2-Pc-Burgersteak_1-Side_600x480px.jpg?v=1632360499&width=600"
+                  alt="Burger-steak">
+              </div>
+
+              <div class="grid-item">
+                <input type="checkbox" class="grid-checkbox" id="Yum-burger" value="Yum-burger" name="Yum-burger" />
+                <label for="Yum-burger">Yum Burger with Fries</label>
+                <img src="https://www.jollibeefoods.com/cdn/shop/products/yumburger.jpg?v=1634857316&width=600"
+                  alt="Yum-burger">
+              </div>
+
+              <div class="grid-item">
+                <input type="checkbox" class="grid-checkbox" id="Spaghetti" value="Spaghetti" name="Spaghetti" />
+                <label for="Spaghetti">Jolly Spaghetti</label>
+                <img
+                  src="https://www.jollibeefoods.com/cdn/shop/products/JollySpaghetti_600x480px.jpg?v=1632360978&width=600"
+                  alt="Spaghetti">
+              </div>
+
+              <div class="grid-item">
+                <input type="checkbox" class="grid-checkbox" id="Palabok-fiesta" value="Palabok-fiesta"
+                  name="Palabok-fiesta" />
+                <label for="Palabok-fiesta">Palabok Fiesta</label>
+                <img
+                  src="https://www.jollibeefoods.com/cdn/shop/files/DD_ProductImage_PalabokALC_NS.jpg?v=1699558192&width=600"
+                  alt="Palabok-fiesta">
+              </div>
+
+              <div class="grid-item">
+                <input type="checkbox" class="grid-checkbox" id="Adobo-rice" value="Adobo-rice" name="Adobo-rice" />
+                <label for="Adobo-rice">Adobo Rice</label>
+                <img src="https://www.jollibeefoods.com/cdn/shop/products/adobo-rice.jpg?v=1628626149&width=600"
+                  alt="Adobo-rice">
+              </div>
+
+              <div class="grid-item">
+                <input type="checkbox" class="grid-checkbox" id="Peach-Mango-pie" value="Peach-Mango-pie"
+                  name="Peach-Mango-pie" />
+                <label for="Peach-Mango-pie">Peach Mango Pie</label>
+                <img src="https://www.jollibeefoods.com/cdn/shop/products/peach-mango-pie.jpg?v=1628089792&width=600"
+                  alt="Peach-Mango-pie">
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Taste Preferences</legend>
+
+      <div id="taste-preference">
+        <label for="spicy-level"> How spicy do you like your food?</label>
+
+        <div id="caption-slider">
+          <div>Gentle</div>
+          <div>Tingle</div>
+          <div>Kick</div>
+          <div>Burn</div>
+          <div>Blaze</div>
+        </div>
+
+        <div id="range-slider">
+          <input class="spicy-slider" id="spicy-level" type="range" name="range" min="0" max="4" value="0" step="1" />
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>What other types of food or menu items would you like to see at Jollibee? </legend>
+      <label></label>
+      <textarea placeholder="Example: Lumpiang Shanghai, Beef Tapa, Corned Beef, etc." rows="5" cols="80"
+        name="other-comments"></textarea>
+    </fieldset>
+
+    <div class="reset-submit">
+      <input id="reset" type="reset" value="Reset" />
+      <input id="submit" type="submit" value="Submit" />
+    </div>
+  </form>
+  </div>
+  <div id="jollibee-logo">
+  </div>
+
+</body>
+
+</html>
